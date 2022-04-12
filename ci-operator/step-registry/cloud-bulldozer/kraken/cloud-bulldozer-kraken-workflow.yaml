@@ -1,0 +1,8 @@
+
+workflow:
+  as: cloud-bulldozer-kraken
+  steps:
+    test:
+      - ref: cloud-bulldozer-kraken
+  documentation: |-
+    This workflow executes kraken chaos testing.

@@ -1,0 +1,55 @@
+build_root:
+  ubi9-minimal:
+    name: ubi-minimal
+    namespace: ocp
+    tag: "9"
+images:
+- dockerfile_path: containerize/Containerfile
+  from: os
+  to: rapidast
+promotion:
+  name: "4.15"
+  namespace: ocp
+releases:
+  initial:
+    integration:
+      name: "4.15"
+      namespace: ocp
+  latest:
+    integration:
+      include_built_images: true
+      name: "4.15"
+      namespace: ocp
+resources:
+  '*':
+    limits:
+      memory: 4Gi
+    requests:
+      cpu: 100m
+      memory: 200Mi
+tests:
+- as: perfscale-aws-5nodes-loaded-upgrade-412to413to414-periodic
+  cron: 0 12 * * 1
+  steps:
+    cluster_profile: aws-qe
+    dependencies:
+      OPENSHIFT_INSTALL_RELEASE_IMAGE_OVERRIDE: release:initial
+    env:
+      BASE_DOMAIN: qe.devcluster.openshift.com
+      CONTROL_PLANE_INSTANCE_TYPE: m5.xlarge
+      ENABLE_FORCE: "true"
+      GC: "false"
+      MAX_UNAVAILABLE: "3"
+      WORKER_REPLICA_COUNT: "5"
+    post:
+    - chain: ipi-aws-post
+    pre:
+    - chain: ipi-aws-pre
+    test:
+    - ref: set-intermediate-releases
+    - chain: openshift-qe-loaded-upgrade
+  timeout: 8h0m0s
+zz_generated_metadata:
+  branch: development
+  org: redhatproductsecurity
+  repo: rapidast

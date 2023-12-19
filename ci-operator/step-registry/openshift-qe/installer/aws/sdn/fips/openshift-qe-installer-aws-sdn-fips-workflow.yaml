@@ -3,12 +3,14 @@ workflow:
   steps:
     env:
       FIPS_ENABLED: "true"
+    allow_best_effort_post_steps: true
     pre:
       - chain: ipi-aws-sdn-pre
       - ref: fips-check-fips-or-die
       - ref: fips-check-node-scan
       - chain: create-infra-move-ingress-monitoring-registry
     post:
+      - ref: redhat-chaos-cerberus-one-run
       - chain: gather-core-dump
       - chain: ipi-aws-post
   documentation: |-

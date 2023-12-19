@@ -4,6 +4,7 @@ ref:
     namespace: chaos
     name: cerberus
     tag: cerberus-prow
+  best_effort: true
   commands: redhat-chaos-cerberus-one-run-commands.sh
   env:
     - name: CERBERUS_DAEMON_MODE

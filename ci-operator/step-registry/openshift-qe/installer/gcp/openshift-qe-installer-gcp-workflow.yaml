@@ -1,7 +1,9 @@
 workflow:
   as: openshift-qe-installer-gcp
   steps:
+    allow_best_effort_post_steps: true
     post:
+    - ref: redhat-chaos-cerberus-one-run
     - chain: ipi-gcp-post
     pre:
     - chain: ipi-gcp-pre

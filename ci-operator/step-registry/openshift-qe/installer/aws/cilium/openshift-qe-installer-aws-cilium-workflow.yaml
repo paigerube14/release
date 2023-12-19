@@ -1,6 +1,7 @@
 workflow:
   as: openshift-qe-installer-aws-cilium
   steps:
+    allow_best_effort_post_steps: true
     pre:
     - chain: ipi-conf-aws
     - ref: network-conf-disable-cno

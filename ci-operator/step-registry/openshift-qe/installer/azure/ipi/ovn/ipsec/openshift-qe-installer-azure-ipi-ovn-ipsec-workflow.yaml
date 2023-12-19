@@ -2,6 +2,7 @@ workflow:
   as: openshift-qe-installer-azure-ipi-ovn-ipsec
   steps:
     post:
+    - ref: redhat-chaos-cerberus-one-run
     - chain: ipi-deprovision
     pre:
     - chain: ipi-conf-azure

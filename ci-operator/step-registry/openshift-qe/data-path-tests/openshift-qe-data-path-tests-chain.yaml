@@ -4,5 +4,6 @@ chain:
   steps:
   - chain: openshift-qe-network-perf
   - chain: openshift-qe-ingress-perf
+  - ref: redhat-chaos-cerberus-one-run-check
   documentation: |-
     This will run the PerfScale data-path tests, network-smoke, network-perf, and ingress-perf

@@ -4,5 +4,6 @@ chain:
   steps:
   - chain: openshift-qe-cluster-density-v2
   - chain: openshift-qe-node-density
+  - ref: redhat-chaos-cerberus-one-run-check
   documentation: |-
     This chain executes cluster density v2 and node density workloads.

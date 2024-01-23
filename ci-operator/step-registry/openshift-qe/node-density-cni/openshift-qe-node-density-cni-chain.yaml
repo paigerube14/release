@@ -4,5 +4,6 @@ chain:
   steps:
   - ref: openshift-qe-node-density-cni
   - ref: redhat-chaos-cerberus-one-run
+  - ref: redhat-chaos-cerberus-one-run-check
   documentation: |-
     This chain executes node density cni workload using kube-burner ocp wrapper

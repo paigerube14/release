@@ -28,4 +28,7 @@ else
 fi
 date
 echo "Finished running cerberus scenarios with status: $replaced_str"
-exit $replaced_str
+
+echo "$replaced_str," >> "$ARTIFACT_DIR/cerberus.out"
+
+exit 0

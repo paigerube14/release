@@ -1,0 +1,24 @@
+ref:
+  as: openshift-qe-dast
+  from: src-oc
+  env:
+  - name: API_URL_LIST
+    default: "v1"
+    documentation: |-
+      Override the list of apis to run the dast tool on
+  - name: POLICY_FILE
+    default: "API-scan-minimal"
+    documentation: |-
+      The policy file to use when running DAST
+  - name: TEST_NAMESPACE
+    default: "default"
+    documentation: |-
+      The policy file to use when running DAST
+  commands: openshift-qe-dast-commands.sh
+  timeout: 6h
+  resources:
+    requests:
+      cpu: 100m
+      memory: 100Mi
+  documentation: >-
+    This step runs the perfscale configmap-scale workload in the deployed cluster

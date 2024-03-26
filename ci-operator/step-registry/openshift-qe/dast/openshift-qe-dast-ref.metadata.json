@@ -1,0 +1,8 @@
+{
+	"path": "openshift-qe/dast/openshift-qe-dast-ref.yaml",
+	"owners": {
+		"approvers": [
+			"paigerube14"
+		]
+	}
+}

@@ -743,7 +743,7 @@ buildFarm:
       - openshift-api-release-4.1-presubmits.yaml
       - stolostron-must-gather-release-2.7-postsubmits.yaml
       - stolostron-must-gather-release-2.5-postsubmits.yaml
-      - openshift-eng-baremetal-qe-infra-staging-presubmits.yaml
+      - openshift-qe-baremetal-qe-infra-staging-presubmits.yaml
       - stolostron-must-gather-release-2.9-postsubmits.yaml
       - stolostron-must-gather-release-2.4-postsubmits.yaml
       - stolostron-must-gather-release-2.6-postsubmits.yaml
@@ -7816,7 +7816,7 @@ buildFarm:
       - openshift-cluster-nfd-operator-release-4.16-periodics.yaml
       - openshift-frr-release-4.19-periodics.yaml
       - openshift-frr-release-4.18-periodics.yaml
-      - openshift-eng-baremetal-qe-infra-monitoring-periodics.yaml
+      - openshift-qe-baremetal-qe-infra-monitoring-periodics.yaml
       - openshift-cluster-node-tuning-operator-release-4.9-periodics.yaml
       - openshift-aws-efs-csi-driver-operator-release-4.11-periodics.yaml
       - openshift-aws-efs-csi-driver-operator-release-4.13-periodics.yaml
@@ -10205,7 +10205,7 @@ buildFarm:
       - openshift-images-master-presubmits.yaml
       - maistra-test-infra-main-presubmits.yaml
       - openshift-oauth-apiserver-release-4.9-presubmits.yaml
-      - openshift-eng-ocpqe-security-tools-main-periodics.yaml
+      - openshift-qe-ocpqe-security-tools-main-periodics.yaml
       - operator-framework-operator-marketplace-release-4.1-presubmits.yaml
       - operator-framework-operator-marketplace-release-4.2-presubmits.yaml
       - operator-framework-operator-marketplace-release-4.3-presubmits.yaml
@@ -11357,7 +11357,7 @@ buildFarm:
       - openshift-sig-storage-local-static-provisioner-release-4.6-postsubmits.yaml
       - openshift-sig-storage-local-static-provisioner-release-4.3-postsubmits.yaml
       - openshift-sig-storage-local-static-provisioner-release-4.8-postsubmits.yaml
-      - openshift-eng-ocpqe-security-tools-main-postsubmits.yaml
+      - openshift-qe-ocpqe-security-tools-main-postsubmits.yaml
       - openshift-cluster-api-provider-baremetal-release-4.2-postsubmits.yaml
       - openshift-cluster-api-provider-baremetal-release-4.1-postsubmits.yaml
       - openshift-csi-driver-shared-resource-master-postsubmits.yaml
@@ -13256,7 +13256,7 @@ buildFarm:
       - redhat-cne-hw-event-proxy-operator-main-postsubmits.yaml
       - stolostron-thanos-metrics-analyzer-main-postsubmits.yaml
       - openshift-loki-main-postsubmits.yaml
-      - openshift-eng-baremetal-qe-infra-staging-postsubmits.yaml
+      - openshift-qe-baremetal-qe-infra-staging-postsubmits.yaml
       - openshift-ansible-service-broker-master-postsubmits.yaml
       - openshift-federation-v2-operator-master-postsubmits.yaml
       - openshift-pipelines-console-plugin-main-postsubmits.yaml
@@ -16589,7 +16589,7 @@ buildFarm:
       - openshift-priv-jenkins-openshift-login-plugin-release-4.14-presubmits.yaml
       - openshift-priv-jenkins-openshift-login-plugin-release-4.13-presubmits.yaml
       - openshift-priv-jenkins-openshift-login-plugin-release-4.12-presubmits.yaml
-      - openshift-eng-ocpqe-security-tools-main-presubmits.yaml
+      - openshift-qe-ocpqe-security-tools-main-presubmits.yaml
       - openshift-priv-cluster-resource-override-admission-master-presubmits.yaml
       - openshift-ocp-release-operator-sdk-release-4.10-presubmits.yaml
       - openshift-insights-runtime-extractor-release-4.19-presubmits.yaml
@@ -18624,7 +18624,7 @@ buildFarm:
       - openshift-openshift-docs-gitops-docs-1.8-presubmits.yaml
       - openshift-openshift-docs-enterprise-4.18-presubmits.yaml
       - openshift-oadp-operator-master-postsubmits.yaml
-      - openshift-eng-baremetal-qe-infra-master-presubmits.yaml
+      - openshift-qe-baremetal-qe-infra-master-presubmits.yaml
       - openshift-priv-app-netutil-release-4.8-presubmits.yaml
       - openshift-priv-app-netutil-release-4.7-presubmits.yaml
       - openshift-priv-app-netutil-release-4.9-presubmits.yaml
@@ -20703,7 +20703,7 @@ buildFarm:
       - openshift-kubernetes-release-4.15-periodics.yaml
       - openshift-multiarch-tuning-operator-v0.0.1-postsubmits.yaml
       - openshift-openshift-velero-plugin-oadp-1.4-postsubmits.yaml
-      - openshift-eng-baremetal-qe-infra-master-postsubmits.yaml
+      - openshift-qe-baremetal-qe-infra-master-postsubmits.yaml
       - openshift-loki-upstream-v3.3.2-postsubmits.yaml
       - openshift-loki-upstream-v3.4.2-postsubmits.yaml
       - migtools-oadp-non-admin-master-postsubmits.yaml
